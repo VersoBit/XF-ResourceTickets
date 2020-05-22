@@ -1,0 +1,32 @@
+{
+    "option.versobitResourceTicketsCategoryId.txt": {
+        "global_cache": false,
+        "version_id": 10000011,
+        "version_string": "1.0.0a1",
+        "hash": "a752eefd3c91179c0e4668e7f76bbb45"
+    },
+    "option_explain.versobitResourceTicketsCategoryId.txt": {
+        "global_cache": false,
+        "version_id": 10000011,
+        "version_string": "1.0.0a1",
+        "hash": "055440ac25ea7e0d2d659280ed8f2c3d"
+    },
+    "option_group.versobitResourceTickets.txt": {
+        "global_cache": false,
+        "version_id": 10000011,
+        "version_string": "1.0.0a1",
+        "hash": "d691925c0f90e73fdc61b78667348086"
+    },
+    "option_group_description.versobitResourceTickets.txt": {
+        "global_cache": false,
+        "version_id": 10000011,
+        "version_string": "1.0.0a1",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "view_resource_ticket.txt": {
+        "global_cache": true,
+        "version_id": 10000011,
+        "version_string": "1.0.0a1",
+        "hash": "8e44b2fc986741c8c36bd6ceb60af7fd"
+    }
+}
