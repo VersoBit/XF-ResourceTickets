@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="public" template="xfrm_resource_wrapper_macros" modification_key="versobit_resourcetickets_ticket_button" description="Adds a 'View Ticket' button to the resource view page" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[			<xf:if is="$resource.canUndelete() AND $resource.resource_state == 'deleted'">
+				<xf:button href="{{ link('resources/undelete', $resource) }}" class="button--link" overlay="true">
+					{{ phrase('undelete') }}
+				</xf:button>
+			</xf:if>]]></find>
+    <replace><![CDATA[			<xf:if is="$resource.canApproveUnapprove() AND $resource.Ticket">
+				<xf:button href="{{ link('tickets', $resource.Ticket) }}" class="button--link" overlay="true">
+					{{ phrase('view_resource_ticket') }}
+				</xf:button>
+			</xf:if>
+$0]]></replace>
+  </modification>
+</template_modifications>

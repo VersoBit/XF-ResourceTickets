@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="option.versobitResourceTicketsCategoryId" version_id="10000011" version_string="1.0.0a1"><![CDATA[Ticket Category]]></phrase>
+  <phrase title="option_explain.versobitResourceTicketsCategoryId" version_id="10000011" version_string="1.0.0a1"><![CDATA[The ID of the tickets category to post new resource tickets to.]]></phrase>
+  <phrase title="option_group.versobitResourceTickets" version_id="10000011" version_string="1.0.0a1"><![CDATA[[VersoBit] Resource Tickets]]></phrase>
+  <phrase title="option_group_description.versobitResourceTickets" version_id="10000011" version_string="1.0.0a1"><![CDATA[]]></phrase>
+  <phrase title="view_resource_ticket" version_id="10000011" version_string="1.0.0a1" global_cache="1"><![CDATA[View Ticket]]></phrase>
+</phrases>

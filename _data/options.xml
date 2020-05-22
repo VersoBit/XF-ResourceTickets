@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option option_id="versobitResourceTicketsCategoryId" edit_format="textbox" data_type="unsigned_integer">
+    <default_value>1</default_value>
+    <relation group_id="versobitResourceTickets" display_order="1"/>
+  </option>
+</options>
