@@ -9,6 +9,9 @@
     "faq_url": "",
     "support_url": "https://support.versobit.dev/",
     "extra_urls": [],
-    "require": [],
+    "require": [
+        "XF/XFRM": [2010670, "XFRM 2.1.6+"],
+        "NF/Tickets": [2000770, "NixFifty Tickets 2.0.7+"]
+    ],
     "icon": "fa-ticket"
 }
