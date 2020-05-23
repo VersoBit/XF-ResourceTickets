@@ -2,8 +2,6 @@
 
 namespace VersoBit\ResourceTickets\XFRM\Service\ResourceItem;
 
-use NF\Tickets\Service\Ticket\Creator;
-
 class Create extends XFCP_Create
 {
     protected function _save()
