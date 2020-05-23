@@ -1,0 +1,1 @@
+The ID of the user to be used to reply to tickets (for instance, on approval).

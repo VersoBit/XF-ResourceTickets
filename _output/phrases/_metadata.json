@@ -5,11 +5,23 @@
         "version_string": "1.0.0a1",
         "hash": "a752eefd3c91179c0e4668e7f76bbb45"
     },
+    "option.versobitResourceTicketsReplyUserId.txt": {
+        "global_cache": false,
+        "version_id": 10000011,
+        "version_string": "1.0.0a1",
+        "hash": "adf4e037cd12b6741634526410f88ab3"
+    },
     "option_explain.versobitResourceTicketsCategoryId.txt": {
         "global_cache": false,
         "version_id": 10000011,
         "version_string": "1.0.0a1",
         "hash": "055440ac25ea7e0d2d659280ed8f2c3d"
+    },
+    "option_explain.versobitResourceTicketsReplyUserId.txt": {
+        "global_cache": false,
+        "version_id": 10000011,
+        "version_string": "1.0.0a1",
+        "hash": "de4db405f522c1758bcab41495fcdfc9"
     },
     "option_group.versobitResourceTickets.txt": {
         "global_cache": false,
