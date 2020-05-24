@@ -50,7 +50,7 @@ class Approve extends XFCP_Approve
             $ticketCreateService->setIsAutomated();
             $ticketCreateService->createForMember($update->Resource->User);
             $ticketCreateService->setContent($update->title, "Your update ".$update->title." has been approved and is now available publicly for users to download! Thanks for sharing your work with the community.", false);
-            $ticketReplyService->getTicket()->status_id = \XF::options()->nftResolvedStatus;
+            $ticketCreateService->getTicket()->status_id = \XF::options()->nftResolvedStatus;
             $ticketCreateService->save();
             $ticketCreateService->sendNotifications();
 
