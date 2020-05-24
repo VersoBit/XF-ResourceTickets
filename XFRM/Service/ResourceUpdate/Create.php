@@ -26,7 +26,7 @@ class Create extends XFCP_Create
             /** @var Replier $ticketReplyService */
             $ticketReplyService = $this->app->service('NF\Tickets:Ticket\Replier', $update->Resource->Ticket);
             $ticketReplyService->logIp(false);
-            $ticketReplyService->setMessage("Update (".$update->title.") submitted and awaiting approval.", false);
+            $ticketReplyService->setMessage("Update (".$update->title.") submitted.", false);
             $ticketReplyService->save();
             $ticketReplyService->sendNotifications();
         });
@@ -43,7 +43,7 @@ class Create extends XFCP_Create
             /** @var Creator $ticketCreateService */
             $ticketCreateService = $this->app->service('NF\Tickets:Ticket\Creator', $ticketCategory);
             $ticketCreateService->setIsAutomated();
-            $ticketCreateService->setContent($resource->title, "Update (".$update->title.") submitted and awaiting approval.", false);
+            $ticketCreateService->setContent($resource->title, "Update (".$update->title.") submitted.", false);
             $ticketCreateService->save();
             $ticketCreateService->sendNotifications();
 

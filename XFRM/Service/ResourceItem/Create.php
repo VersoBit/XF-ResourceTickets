@@ -25,7 +25,7 @@ class Create extends XFCP_Create
             $ticketCreateService = $this->app->service('NF\Tickets:Ticket\Creator', $ticketCategory);
             $ticketCreateService->setIsAutomated();
             $ticketCreateService->logIp(false);
-            $ticketCreateService->setContent($resource->title, "Submitted and awaiting approval.", false);
+            $ticketCreateService->setContent($resource->title, $resource->title." submitted.", false);
             $ticketCreateService->save();
             $ticketCreateService->sendNotifications();
 
