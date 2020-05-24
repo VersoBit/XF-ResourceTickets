@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <options>
+  <option option_id="versobitResourceTicketsAcceptedPrefixId" edit_format="textbox" data_type="unsigned_integer">
+    <default_value>0</default_value>
+    <relation group_id="versobitResourceTickets" display_order="4"/>
+  </option>
+  <option option_id="versobitResourceTicketsAwaitingApprovalPrefixId" edit_format="textbox" data_type="unsigned_integer">
+    <default_value>0</default_value>
+    <relation group_id="versobitResourceTickets" display_order="3"/>
+  </option>
   <option option_id="versobitResourceTicketsCategoryId" edit_format="textbox" data_type="unsigned_integer">
     <default_value>1</default_value>
     <relation group_id="versobitResourceTickets" display_order="1"/>
   </option>
   <option option_id="versobitResourceTicketsReplyUserId" edit_format="textbox" data_type="unsigned_integer">
     <default_value>1</default_value>
-    <relation group_id="versobitResourceTickets" display_order="1"/>
+    <relation group_id="versobitResourceTickets" display_order="2"/>
   </option>
 </options>

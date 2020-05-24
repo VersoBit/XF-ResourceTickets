@@ -1,4 +1,16 @@
 {
+    "option.versobitResourceTicketsAcceptedPrefixId.txt": {
+        "global_cache": false,
+        "version_id": 10000013,
+        "version_string": "10.0.0 Alpha 3",
+        "hash": "fd8d363f396a70f7d721091a62db1ad6"
+    },
+    "option.versobitResourceTicketsAwaitingApprovalPrefixId.txt": {
+        "global_cache": false,
+        "version_id": 10000013,
+        "version_string": "10.0.0 Alpha 3",
+        "hash": "86b8480c11d794024b734aa1e3c3d261"
+    },
     "option.versobitResourceTicketsCategoryId.txt": {
         "global_cache": false,
         "version_id": 10000011,
@@ -10,6 +22,18 @@
         "version_id": 10000011,
         "version_string": "1.0.0a1",
         "hash": "adf4e037cd12b6741634526410f88ab3"
+    },
+    "option_explain.versobitResourceTicketsAcceptedPrefixId.txt": {
+        "global_cache": false,
+        "version_id": 10000013,
+        "version_string": "10.0.0 Alpha 3",
+        "hash": "5ac6e946e747cc2285a87e343e661dde"
+    },
+    "option_explain.versobitResourceTicketsAwaitingApprovalPrefixId.txt": {
+        "global_cache": false,
+        "version_id": 10000013,
+        "version_string": "10.0.0 Alpha 3",
+        "hash": "49d36b20715448ff743b9ab7fa0805d6"
     },
     "option_explain.versobitResourceTicketsCategoryId.txt": {
         "global_cache": false,

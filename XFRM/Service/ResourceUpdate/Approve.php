@@ -20,8 +20,7 @@ class Approve extends XFCP_Approve
     protected function createTicketReplyForResourceUpdate($update)
     {
         // Get reply user instance
-        // TODO: Set this somehow to the staff user approving
-        $replyUser = \XF::finder('XF:User')->where('user_id', \XF::options()->versobitResourceTicketsReplyUserId)->fetchOne();
+        $replyUser = \XF::visitor();
 
         // Create new reply if resource already has ticket
         \XF::asVisitor($replyUser, function() use ($update)
@@ -30,11 +29,11 @@ class Approve extends XFCP_Approve
             $ticketReplyService = $this->app->service('NF\Tickets:Ticket\Replier', $update->Resource->Ticket);
             $ticketReplyService->logIp(false);
             $ticketReplyService->setMessage("Your update ".$update->title." has been approved and is now available publicly for users to download! Thanks for sharing your work with the community.", false);
+            $ticketReplyService->getTicket()->status_id = \XF::options()->nftResolvedStatus;
+            $ticketReplyService->getTicket()->prefix_id = \XF::options()->versobitResourceTicketsAcceptedPrefixId;
             $ticketReplyService->save();
             $ticketReplyService->sendNotifications();
         });
-
-        //TODO: Set ticket status to resolved
     }
 
     protected function createTicketForResourceUpdate($update)
@@ -42,8 +41,7 @@ class Approve extends XFCP_Approve
         // Get ticket category instance
         $ticketCategory = \XF::finder('NF\Tickets:Category')->where('ticket_category_id', \XF::options()->versobitResourceTicketsCategoryId)->fetchOne();
         // Get reply user instance
-        // TODO: Set this somehow to the staff user approving
-        $replyUser = \XF::finder('XF:User')->where('user_id', \XF::options()->versobitResourceTicketsReplyUserId)->fetchOne();
+        $replyUser = \XF::visitor();
 
         // Create new ticket
         \XF::asVisitor($replyUser, function() use ($update, $ticketCategory)
@@ -53,6 +51,8 @@ class Approve extends XFCP_Approve
             $ticketCreateService->setIsAutomated();
             $ticketCreateService->createForMember($update->Resource->User);
             $ticketCreateService->setContent($update->title, "Your update ".$update->title." has been approved and is now available publicly for users to download! Thanks for sharing your work with the community.", false);
+            $ticketCreateService->setStatus(\XF::options()->nftResolvedStatus);
+            $ticketCreateService->setPrefix(\XF::options()->versobitResourceTicketsAcceptedPrefixId);
             $ticketCreateService->save();
             $ticketCreateService->sendNotifications();
 

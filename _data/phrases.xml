@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <phrases>
+  <phrase title="option.versobitResourceTicketsAcceptedPrefixId" version_id="10000013" version_string="10.0.0 Alpha 3"><![CDATA[Ticket 'Accepted' Prefix]]></phrase>
+  <phrase title="option.versobitResourceTicketsAwaitingApprovalPrefixId" version_id="10000013" version_string="10.0.0 Alpha 3"><![CDATA[Ticket 'Awaiting Approval' Prefix]]></phrase>
   <phrase title="option.versobitResourceTicketsCategoryId" version_id="10000011" version_string="1.0.0a1"><![CDATA[Ticket Category]]></phrase>
   <phrase title="option.versobitResourceTicketsReplyUserId" version_id="10000011" version_string="1.0.0a1"><![CDATA[Ticket Reply User]]></phrase>
+  <phrase title="option_explain.versobitResourceTicketsAcceptedPrefixId" version_id="10000013" version_string="10.0.0 Alpha 3"><![CDATA[The ID of the prefix to be set to all approved resources/resource updates.]]></phrase>
+  <phrase title="option_explain.versobitResourceTicketsAwaitingApprovalPrefixId" version_id="10000013" version_string="10.0.0 Alpha 3"><![CDATA[The ID of the prefix to be set to all resources/resource updates awaiting approval.]]></phrase>
   <phrase title="option_explain.versobitResourceTicketsCategoryId" version_id="10000011" version_string="1.0.0a1"><![CDATA[The ID of the tickets category to post new resource tickets to.]]></phrase>
   <phrase title="option_explain.versobitResourceTicketsReplyUserId" version_id="10000011" version_string="1.0.0a1"><![CDATA[The ID of the user to be used to reply to tickets (for instance, on approval).]]></phrase>
   <phrase title="option_group.versobitResourceTickets" version_id="10000011" version_string="1.0.0a1"><![CDATA[[VersoBit] Resource Tickets]]></phrase>

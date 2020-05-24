@@ -1,0 +1,1 @@
+The ID of the prefix to be set to all approved resources/resource updates.
