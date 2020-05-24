@@ -1,6 +1,12 @@
 {
+    "XFRM-Service-ResourceItem-Approve_VersoBit-ResourceTickets-XFRM-Service-ResourceItem-Approve.json": {
+        "hash": "b2e42581cd98718f8bd64154b89bb166"
+    },
     "XFRM-Service-ResourceItem-Create_VersoBit-ResourceTickets-XFRM-Service-ResourceItem-Create.json": {
         "hash": "dc9e0ff6c70f34cedd102b2ea671c165"
+    },
+    "XFRM-Service-ResourceUpdate-Approve_VersoBit-ResourceTickets-XFRM-Service-ResourceUpdate-Approve.json": {
+        "hash": "22dd962b61da1dd19951c76044a5a728"
     },
     "XFRM-Service-ResourceUpdate-Create_VersoBit-ResourceTickets-XFRM-Service-ResourceUpdate-Create.json": {
         "hash": "c16bfef48a71c770883e30cf06473142"

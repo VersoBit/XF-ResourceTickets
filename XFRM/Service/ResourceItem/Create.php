@@ -2,8 +2,6 @@
 
 namespace VersoBit\ResourceTickets\XFRM\Service\ResourceItem;
 
-use NF\Tickets\Service\Ticket\Creator;
-
 class Create extends XFCP_Create
 {
     protected function _save()
@@ -27,7 +25,7 @@ class Create extends XFCP_Create
             $ticketCreateService = $this->app->service('NF\Tickets:Ticket\Creator', $ticketCategory);
             $ticketCreateService->setIsAutomated();
             $ticketCreateService->logIp(false);
-            $ticketCreateService->setContent($resource->title, "Submitted and awaiting approval.", false);
+            $ticketCreateService->setContent($resource->title, $resource->title." submitted.", false);
             $ticketCreateService->save();
             $ticketCreateService->sendNotifications();
 

@@ -4,4 +4,8 @@
     <default_value>1</default_value>
     <relation group_id="versobitResourceTickets" display_order="1"/>
   </option>
+  <option option_id="versobitResourceTicketsReplyUserId" edit_format="textbox" data_type="unsigned_integer">
+    <default_value>1</default_value>
+    <relation group_id="versobitResourceTickets" display_order="1"/>
+  </option>
 </options>

@@ -2,15 +2,15 @@
     "legacy_addon_id": "",
     "title": "[VersoBit] Resource Tickets",
     "description": "Automatically creates & replies to tickets based on resource actions.",
-    "version_id": 10000011,
-    "version_string": "1.0.0a1",
+    "version_id": 10000012,
+    "version_string": "1.0.0a2",
     "dev": "VersoBit",
     "dev_url": "https://versobit.dev/",
     "faq_url": "",
     "support_url": "https://support.versobit.dev/",
     "extra_urls": [],
     "require": {
-        "XF/XFRM": [
+        "XFRM": [
             2010670,
             "XFRM 2.1.6+"
         ],
