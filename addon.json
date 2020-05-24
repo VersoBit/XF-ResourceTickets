@@ -3,7 +3,7 @@
     "title": "[VersoBit] Resource Tickets",
     "description": "Automatically creates & replies to tickets based on resource actions.",
     "version_id": 10000013,
-    "version_string": "10.0.0 Alpha 3",
+    "version_string": "1.0.0a3",
     "dev": "VersoBit",
     "dev_url": "https://versobit.dev/",
     "faq_url": "",
