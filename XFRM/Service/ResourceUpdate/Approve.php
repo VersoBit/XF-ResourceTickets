@@ -30,6 +30,7 @@ class Approve extends XFCP_Approve
             $ticketReplyService->logIp(false);
             $ticketReplyService->setMessage("Your update ".$update->title." has been approved and is now available publicly for users to download! Thanks for sharing your work with the community.", false);
             $ticketReplyService->getTicket()->status_id = \XF::options()->nftResolvedStatus;
+            $ticketReplyService->getTicket()->prefix_id = \XF::options()->versobitResourceTicketsAcceptedPrefixId;
             $ticketReplyService->save();
             $ticketReplyService->sendNotifications();
         });
@@ -51,6 +52,7 @@ class Approve extends XFCP_Approve
             $ticketCreateService->createForMember($update->Resource->User);
             $ticketCreateService->setContent($update->title, "Your update ".$update->title." has been approved and is now available publicly for users to download! Thanks for sharing your work with the community.", false);
             $ticketCreateService->getTicket()->status_id = \XF::options()->nftResolvedStatus;
+            $ticketCreateService->setPrefix(\XF::options()->versobitResourceTicketsAcceptedPrefixId);
             $ticketCreateService->save();
             $ticketCreateService->sendNotifications();
 
