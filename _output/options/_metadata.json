@@ -1,8 +1,14 @@
 {
+    "versobitResourceTicketsAcceptedPrefixId.json": {
+        "hash": "f8cb6327fcb384a949d403d6d9e907e4"
+    },
+    "versobitResourceTicketsAwaitingApprovalPrefixId.json": {
+        "hash": "452fd3400862e43b464c50eb0147032c"
+    },
     "versobitResourceTicketsCategoryId.json": {
         "hash": "46238c46fde98a17a5eecc5a03d337a8"
     },
     "versobitResourceTicketsReplyUserId.json": {
-        "hash": "46238c46fde98a17a5eecc5a03d337a8"
+        "hash": "ad559cb3e0b0f7cdccc61ab2d0fcabf4"
     }
 }
