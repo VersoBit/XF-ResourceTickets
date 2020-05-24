@@ -11,5 +11,6 @@ namespace VersoBit\ResourceTickets\XFRM\Service\ResourceItem
 
 namespace VersoBit\ResourceTickets\XFRM\Service\ResourceUpdate
 {
+	class XFCP_Approve extends \XFRM\Service\ResourceUpdate\Approve {}
 	class XFCP_Create extends \XFRM\Service\ResourceUpdate\Create {}
 }

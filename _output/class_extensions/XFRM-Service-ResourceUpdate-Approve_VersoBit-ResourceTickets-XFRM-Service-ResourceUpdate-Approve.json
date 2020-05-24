@@ -1,0 +1,6 @@
+{
+    "from_class": "XFRM\\Service\\ResourceUpdate\\Approve",
+    "to_class": "VersoBit\\ResourceTickets\\XFRM\\Service\\ResourceUpdate\\Approve",
+    "execute_order": 10,
+    "active": true
+}
