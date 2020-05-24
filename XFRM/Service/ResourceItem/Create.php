@@ -26,7 +26,7 @@ class Create extends XFCP_Create
             $ticketCreateService->setIsAutomated();
             $ticketCreateService->logIp(false);
             $ticketCreateService->setContent($resource->title, $resource->title." submitted.", false);
-            $ticketCreateService->getTicket()->prefix_id = \XF::options()->versobitResourceTicketsAwaitingApprovalPrefixId;
+            $ticketCreateService->setPrefix(\XF::options()->versobitResourceTicketsAwaitingApprovalPrefixId);
             $ticketCreateService->save();
             $ticketCreateService->sendNotifications();
 
