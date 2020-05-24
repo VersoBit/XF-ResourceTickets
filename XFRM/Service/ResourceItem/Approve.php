@@ -51,7 +51,7 @@ class Approve extends XFCP_Approve
             $ticketCreateService->setIsAutomated();
             $ticketCreateService->createForMember($resource->User);
             $ticketCreateService->setContent($resource->title, "Your submission ".$resource->title." has been approved and is now available publicly for users to download! Thanks for sharing your work with the community.", false);
-            $ticketCreateService->getTicket()->status_id = \XF::options()->nftResolvedStatus;
+            $ticketCreateService->setStatus(\XF::options()->nftResolvedStatus);
             $ticketCreateService->setPrefix(\XF::options()->versobitResourceTicketsAcceptedPrefixId);
             $ticketCreateService->save();
             $ticketCreateService->sendNotifications();
