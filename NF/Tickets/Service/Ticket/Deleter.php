@@ -2,8 +2,6 @@
 
 namespace VersoBit\ResourceTickets\NF\Tickets\Service\Ticket;
 
-use http\Params;
-
 class Deleter extends XFCP_Deleter
 {
     public function delete($type, $reason = '')
