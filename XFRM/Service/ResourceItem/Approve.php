@@ -28,7 +28,7 @@ class Approve extends XFCP_Approve
             /** @var Replier $ticketReplyService */
             $ticketReplyService = $this->app->service('NF\Tickets:Ticket\Replier', $resource->Ticket);
             $ticketReplyService->logIp(false);
-            $ticketReplyService->setMessage("Your submission ".$resource->title." has been approved and is now available publicly for users to download! Thanks for sharing your work with the community.", false);
+            $ticketReplyService->setMessage("Your submission [B]".$resource->title."[/B] has been approved and is now available publicly for users to download! Thanks for sharing your work with the community.", false);
             $ticketReplyService->getTicket()->status_id = \XF::options()->nftResolvedStatus;
             $ticketReplyService->getTicket()->prefix_id = \XF::options()->versobitResourceTicketsAcceptedPrefixId;
             $ticketReplyService->save();
@@ -50,7 +50,7 @@ class Approve extends XFCP_Approve
             $ticketCreateService = $this->app->service('NF\Tickets:Ticket\Creator', $ticketCategory);
             $ticketCreateService->setIsAutomated();
             $ticketCreateService->createForMember($resource->User);
-            $ticketCreateService->setContent($resource->title, "Your submission ".$resource->title." has been approved and is now available publicly for users to download! Thanks for sharing your work with the community.", false);
+            $ticketCreateService->setContent($resource->title, "Your submission [B]".$resource->title."[/B] has been approved and is now available publicly for users to download! Thanks for sharing your work with the community.", false);
             $ticketCreateService->setStatus(\XF::options()->nftResolvedStatus);
             $ticketCreateService->setPrefix(\XF::options()->versobitResourceTicketsAcceptedPrefixId);
             $ticketCreateService->save();
