@@ -8,12 +8,15 @@ class Create extends XFCP_Create
     {
         $update = parent::_save();
 
-        if($update->Resource->Ticket) {
-            // Create new reply if resource already has ticket
-            $this->createTicketReplyForResourceUpdate($update);
-        }else{
-            // Create new ticket if one doesn't yet exist
-            $this->createTicketForResource($update->Resource, $update);
+        // If resource awaiting approval
+        if($update->message_state == 'moderated'){
+            if($update->Resource->Ticket) {
+                // Create new reply if resource already has ticket
+                $this->createTicketReplyForResourceUpdate($update);
+            }else{
+                // Create new ticket if one doesn't yet exist
+                $this->createTicketForResource($update->Resource, $update);
+            }
         }
 
         return $update;
@@ -26,7 +29,7 @@ class Create extends XFCP_Create
             /** @var Replier $ticketReplyService */
             $ticketReplyService = $this->app->service('NF\Tickets:Ticket\Replier', $update->Resource->Ticket);
             $ticketReplyService->logIp(false);
-            $ticketReplyService->setMessage("Update (".$update->title.") submitted.", false);
+            $ticketReplyService->setMessage("Update [B](".$update->title.")[/B] submitted.", false);
             $ticketReplyService->getTicket()->status_id = \XF::options()->nfTicketsDefaultStatus;
             $ticketReplyService->getTicket()->prefix_id = \XF::options()->versobitResourceTicketsAwaitingApprovalPrefixId;
             $ticketReplyService->save();
@@ -45,7 +48,7 @@ class Create extends XFCP_Create
             /** @var Creator $ticketCreateService */
             $ticketCreateService = $this->app->service('NF\Tickets:Ticket\Creator', $ticketCategory);
             $ticketCreateService->setIsAutomated();
-            $ticketCreateService->setContent($resource->title, "Update (".$update->title.") submitted.", false);
+            $ticketCreateService->setContent($resource->title, "Update [B](".$update->title.")[/B] submitted.", false);
             $ticketCreateService->setPrefix(\XF::options()->versobitResourceTicketsAwaitingApprovalPrefixId);
             $ticketCreateService->save();
             $ticketCreateService->sendNotifications();

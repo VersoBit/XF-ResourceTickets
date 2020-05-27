@@ -8,7 +8,10 @@ class Create extends XFCP_Create
     {
         $resource = parent::_save();
 
-        $this->createTicketForResource($resource);
+        // If resource awaiting approval
+        if($resource->resource_state == 'moderated'){
+            $this->createTicketForResource($resource);
+        }
 
         return $resource;
     }
@@ -25,7 +28,7 @@ class Create extends XFCP_Create
             $ticketCreateService = $this->app->service('NF\Tickets:Ticket\Creator', $ticketCategory);
             $ticketCreateService->setIsAutomated();
             $ticketCreateService->logIp(false);
-            $ticketCreateService->setContent($resource->title, $resource->title." submitted.", false);
+            $ticketCreateService->setContent($resource->title, "[B]".$resource->title."[/B] submitted.", false);
             $ticketCreateService->setPrefix(\XF::options()->versobitResourceTicketsAwaitingApprovalPrefixId);
             $ticketCreateService->save();
             $ticketCreateService->sendNotifications();
