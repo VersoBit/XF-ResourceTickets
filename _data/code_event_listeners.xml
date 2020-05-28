@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <code_event_listeners>
   <listener event_id="entity_structure" execute_order="10" callback_class="VersoBit\ResourceTickets\Listener" callback_method="resourceItemEntityStructure" active="1" hint="XFRM\Entity\ResourceItem" description="Extends the XFRM\Entity\ResourceItem structure"/>
+  <listener event_id="entity_structure" execute_order="10" callback_class="VersoBit\ResourceTickets\Listener" callback_method="ticketEntityStructure" active="1" hint="NF\Tickets\Entity\Ticket" description="Extends the NF\Tickets\Ticket structure"/>
 </code_event_listeners>
