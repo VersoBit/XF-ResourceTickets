@@ -21,7 +21,7 @@ class Deleter extends XFCP_Deleter
         // TODO: use entity relationship here
         $resource = \XF::finder('XFRM:ResourceItem')->where('ticket_id', $ticket->ticket_id)->fetchOne();
 
-        if($resource->exists()){
+        if($resource){
             $resource->fastUpdate('ticket_id', 0);
         }
     }
