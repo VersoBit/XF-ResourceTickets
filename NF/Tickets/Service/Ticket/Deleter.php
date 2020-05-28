@@ -19,7 +19,7 @@ class Deleter extends XFCP_Deleter
 
         // Fetch resource and change `ticket_id` to null (0)
         // TODO: use entity relationship here
-        $resource = \XF::finder('XFRM:ResourceItem')->where('ticket_id', $ticket->ticket_id)->fetchOne();
+        $resource = $ticket->Resource;
 
         if($resource){
             $resource->fastUpdate('ticket_id', 0);
