@@ -5,5 +5,5 @@
     "enabled": true,
     "action": "str_replace",
     "find": "\t\t\t<xf:if is=\"$resource.canUndelete() AND $resource.resource_state == 'deleted'\">\n\t\t\t\t<xf:button href=\"{{ link('resources/undelete', $resource) }}\" class=\"button--link\" overlay=\"true\">\n\t\t\t\t\t{{ phrase('undelete') }}\n\t\t\t\t</xf:button>\n\t\t\t</xf:if>",
-    "replace": "\t\t\t<xf:if is=\"$resource.canApproveUnapprove() AND $resource.Ticket\">\n\t\t\t\t<xf:button href=\"{{ link('tickets', $resource.Ticket) }}\" class=\"button--link\" overlay=\"true\">\n\t\t\t\t\t{{ phrase('view_resource_ticket') }}\n\t\t\t\t</xf:button>\n\t\t\t</xf:if>\n$0"
+    "replace": "\t\t\t<xf:if is=\"($resource.canApproveUnapprove() OR $resource.canEdit()) AND $resource.Ticket\">\n\t\t\t\t<xf:button href=\"{{ link('tickets', $resource.Ticket) }}\" class=\"button--link\" overlay=\"true\">\n\t\t\t\t\t{{ phrase('vb_resourcetickets_view_resource_ticket') }}\n\t\t\t\t</xf:button>\n\t\t\t</xf:if>\n$0"
 }

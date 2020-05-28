@@ -1,0 +1,6 @@
+{
+    "from_class": "NF\\Tickets\\Service\\Ticket\\Deleter",
+    "to_class": "VersoBit\\ResourceTickets\\NF\\Tickets\\Service\\Ticket\\Deleter",
+    "execute_order": 10,
+    "active": true
+}

@@ -17,12 +17,6 @@
         "version_string": "1.0.0a1",
         "hash": "a752eefd3c91179c0e4668e7f76bbb45"
     },
-    "option.versobitResourceTicketsReplyUserId.txt": {
-        "global_cache": false,
-        "version_id": 10000011,
-        "version_string": "1.0.0a1",
-        "hash": "adf4e037cd12b6741634526410f88ab3"
-    },
     "option_explain.versobitResourceTicketsAcceptedPrefixId.txt": {
         "global_cache": false,
         "version_id": 10000013,
@@ -41,12 +35,6 @@
         "version_string": "1.0.0a1",
         "hash": "055440ac25ea7e0d2d659280ed8f2c3d"
     },
-    "option_explain.versobitResourceTicketsReplyUserId.txt": {
-        "global_cache": false,
-        "version_id": 10000011,
-        "version_string": "1.0.0a1",
-        "hash": "de4db405f522c1758bcab41495fcdfc9"
-    },
     "option_group.versobitResourceTickets.txt": {
         "global_cache": false,
         "version_id": 10000011,
@@ -59,10 +47,16 @@
         "version_string": "1.0.0a1",
         "hash": "d41d8cd98f00b204e9800998ecf8427e"
     },
-    "view_resource_ticket.txt": {
+    "vb_resourcetickets_view_resource_ticket.txt": {
         "global_cache": true,
-        "version_id": 10000011,
-        "version_string": "1.0.0a1",
+        "version_id": 10000013,
+        "version_string": "1.0.0a3",
         "hash": "8e44b2fc986741c8c36bd6ceb60af7fd"
+    },
+    "vb_resourcetickets_view_ticket_resource.txt": {
+        "global_cache": true,
+        "version_id": 10000013,
+        "version_string": "1.0.0a3",
+        "hash": "6ae1bebf2bcedb9f53587ed140ff90a8"
     }
 }

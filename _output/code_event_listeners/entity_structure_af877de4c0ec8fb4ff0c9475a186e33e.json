@@ -1,0 +1,9 @@
+{
+    "event_id": "entity_structure",
+    "execute_order": 10,
+    "callback_class": "VersoBit\\ResourceTickets\\Listener",
+    "callback_method": "ticketEntityStructure",
+    "active": true,
+    "hint": "NF\\Tickets\\Entity\\Ticket",
+    "description": "Extends the NF\\Tickets\\Ticket structure"
+}

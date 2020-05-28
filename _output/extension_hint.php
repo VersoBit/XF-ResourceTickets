@@ -3,6 +3,11 @@
 // ################## THIS IS A GENERATED FILE ##################
 // DO NOT EDIT DIRECTLY. EDIT THE CLASS EXTENSIONS IN THE CONTROL PANEL.
 
+namespace VersoBit\ResourceTickets\NF\Tickets\Service\Ticket
+{
+	class XFCP_Deleter extends \NF\Tickets\Service\Ticket\Deleter {}
+}
+
 namespace VersoBit\ResourceTickets\XFRM\Service\ResourceItem
 {
 	class XFCP_Approve extends \XFRM\Service\ResourceItem\Approve {}
