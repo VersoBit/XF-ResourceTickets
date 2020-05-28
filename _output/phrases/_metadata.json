@@ -47,16 +47,16 @@
         "version_string": "1.0.0a1",
         "hash": "d41d8cd98f00b204e9800998ecf8427e"
     },
+    "vb_resourcetickets_view_resource_ticket.txt": {
+        "global_cache": true,
+        "version_id": 10000013,
+        "version_string": "1.0.0a3",
+        "hash": "8e44b2fc986741c8c36bd6ceb60af7fd"
+    },
     "vb_resourcetickets_view_ticket_resource.txt": {
         "global_cache": true,
         "version_id": 10000013,
         "version_string": "1.0.0a3",
         "hash": "6ae1bebf2bcedb9f53587ed140ff90a8"
-    },
-    "view_resource_ticket.txt": {
-        "global_cache": true,
-        "version_id": 10000011,
-        "version_string": "1.0.0a1",
-        "hash": "8e44b2fc986741c8c36bd6ceb60af7fd"
     }
 }
