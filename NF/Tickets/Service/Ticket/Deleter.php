@@ -18,7 +18,6 @@ class Deleter extends XFCP_Deleter
         $ticket = $this->ticket;
 
         // Fetch resource and change `ticket_id` to null (0)
-        // TODO: use entity relationship here
         $resource = $ticket->Resource;
 
         if($resource){
