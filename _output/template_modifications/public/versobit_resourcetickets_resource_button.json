@@ -1,0 +1,9 @@
+{
+    "template": "nf_tickets_ticket_wrapper_macros",
+    "description": "Adds a 'View Resource' button to the ticket view page",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "\t\t\t<xf:if is=\"$ticket.canUndelete() AND $ticket.discussion_state == 'deleted'\">\n\t\t\t\t<xf:button href=\"{{ link('tickets/undelete', $ticket) }}\" class=\"button--link\" overlay=\"true\">\n\t\t\t\t\t{{ phrase('undelete') }}\n\t\t\t\t</xf:button>\n\t\t\t</xf:if>",
+    "replace": "\t\t\t<xf:if is=\"$ticket.Resource\">\n\t\t\t\t<xf:button href=\"{{ link('resources', $ticket->Resource) }}\" class=\"button--link\" overlay=\"true\">\n\t\t\t\t\t{{ phrase('vb_resourcetickets_view_ticket_resource') }}\n\t\t\t\t</xf:button>\n\t\t\t</xf:if>\n$0"
+}
