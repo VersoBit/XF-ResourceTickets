@@ -16,4 +16,16 @@ class Listener
             'primary' => true
         ];
     }
+
+    public static function ticketEntityStructure(\XF\Mvc\Entity\Manager $em, \XF\Mvc\Entity\Structure &$structure)
+    {
+        $structure->relations['Resource'] = [
+            'entity' => 'XFRM:ResourceItem',
+            'type' => Entity::TO_ONE,
+            'conditions' => [
+                ['ticket_id', '=', '$ticket_id']
+            ],
+            'key' => 'ticket_id'
+        ];
+    }
 }
