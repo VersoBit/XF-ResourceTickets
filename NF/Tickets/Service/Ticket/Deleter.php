@@ -8,6 +8,13 @@ class Deleter extends XFCP_Deleter
     {
         $result = parent::delete($type, $reason = '');
 
+        $this->disassociateAssociatedResource();
+
+        return $result;
+    }
+
+    protected function disassociateAssociatedResource()
+    {
         $ticket = $this->ticket;
 
         // Fetch resource and change `ticket_id` to null (0)
@@ -17,7 +24,5 @@ class Deleter extends XFCP_Deleter
         if($resource->exists()){
             $resource->fastUpdate('ticket_id', 0);
         }
-
-        return $result;
     }
 }
