@@ -28,7 +28,6 @@ class Create extends XFCP_Create
         {
             /** @var Replier $ticketReplyService */
             $ticketReplyService = $this->app->service('NF\Tickets:Ticket\Replier', $update->Resource->Ticket);
-            $ticketReplyService->logIp(false);
             $ticketReplyService->setMessage("Update [B](".$update->title.")[/B] submitted.", false);
             $ticketReplyService->getTicket()->status_id = \XF::options()->nfTicketsDefaultStatus;
             $ticketReplyService->getTicket()->prefix_id = \XF::options()->versobitResourceTicketsAwaitingApprovalPrefixId;
@@ -47,7 +46,6 @@ class Create extends XFCP_Create
         {
             /** @var Creator $ticketCreateService */
             $ticketCreateService = $this->app->service('NF\Tickets:Ticket\Creator', $ticketCategory);
-            $ticketCreateService->setIsAutomated();
             $ticketCreateService->setContent($resource->title, "Update [B](".$update->title.")[/B] submitted.", false);
             $ticketCreateService->setPrefix(\XF::options()->versobitResourceTicketsAwaitingApprovalPrefixId);
             $ticketCreateService->save();

@@ -27,7 +27,6 @@ class Approve extends XFCP_Approve
         {
             /** @var Replier $ticketReplyService */
             $ticketReplyService = $this->app->service('NF\Tickets:Ticket\Replier', $update->Resource->Ticket);
-            $ticketReplyService->logIp(false);
             $ticketReplyService->setMessage("Your update [B]".$update->title."[/B] has been approved and is now available publicly for users to download! Thanks for sharing your work with the community.", false);
             $ticketReplyService->getTicket()->status_id = \XF::options()->nftResolvedStatus;
             $ticketReplyService->getTicket()->prefix_id = \XF::options()->versobitResourceTicketsAcceptedPrefixId;
@@ -48,7 +47,6 @@ class Approve extends XFCP_Approve
         {
             /** @var Creator $ticketCreateService */
             $ticketCreateService = $this->app->service('NF\Tickets:Ticket\Creator', $ticketCategory);
-            $ticketCreateService->setIsAutomated();
             $ticketCreateService->createForMember($update->Resource->User);
             $ticketCreateService->setContent($update->title, "Your update [B]".$update->title."[/B] has been approved and is now available publicly for users to download! Thanks for sharing your work with the community.", false);
             $ticketCreateService->setStatus(\XF::options()->nftResolvedStatus);
