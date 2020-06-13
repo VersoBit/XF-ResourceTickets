@@ -27,7 +27,6 @@ class Approve extends XFCP_Approve
         {
             /** @var Replier $ticketReplyService */
             $ticketReplyService = $this->app->service('NF\Tickets:Ticket\Replier', $resource->Ticket);
-            $ticketReplyService->logIp(false);
             $ticketReplyService->setMessage("Your submission [B]".$resource->title."[/B] has been approved and is now available publicly for users to download! Thanks for sharing your work with the community.", false);
             $ticketReplyService->getTicket()->status_id = \XF::options()->nftResolvedStatus;
             $ticketReplyService->getTicket()->prefix_id = \XF::options()->versobitResourceTicketsAcceptedPrefixId;
