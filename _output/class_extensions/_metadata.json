@@ -8,6 +8,9 @@
     "XFRM-Service-ResourceItem-Create_VersoBit-ResourceTickets-XFRM-Service-ResourceItem-Create.json": {
         "hash": "dc9e0ff6c70f34cedd102b2ea671c165"
     },
+    "XFRM-Service-ResourceItem-Reassign_VersoBit-ResourceTickets-XFRM-Service-ResourceItem-Reassign.json": {
+        "hash": "e380a26a903e7e88b31605f518d41772"
+    },
     "XFRM-Service-ResourceUpdate-Approve_VersoBit-ResourceTickets-XFRM-Service-ResourceUpdate-Approve.json": {
         "hash": "22dd962b61da1dd19951c76044a5a728"
     },
