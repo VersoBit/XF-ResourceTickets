@@ -47,8 +47,7 @@ class Approve extends XFCP_Approve
         \XF::asVisitor($replyUser, function() use ($resource, $ticketCategory)
         {
             /** @var Creator $ticketCreateService */
-            $ticketCreateService = $this->app->service('NF\Tickets:Ticket\Creator', $ticketCategory);
-            $ticketCreateService->setIsAutomated();
+            $ticketCreateService = $this->app->service('NF\Tickets:Ticket\Creator', $ticketCategory);ss
             $ticketCreateService->createForMember($resource->User);
             $ticketCreateService->setContent($resource->title, "Your submission [B]".$resource->title."[/B] has been approved and is now available publicly for users to download! Thanks for sharing your work with the community.", false);
             $ticketCreateService->setStatus(\XF::options()->nftResolvedStatus);
