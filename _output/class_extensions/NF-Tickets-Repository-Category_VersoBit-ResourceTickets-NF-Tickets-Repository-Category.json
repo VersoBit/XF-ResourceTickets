@@ -1,0 +1,6 @@
+{
+    "from_class": "NF\\Tickets\\Repository\\Category",
+    "to_class": "VersoBit\\ResourceTickets\\NF\\Tickets\\Repository\\Category",
+    "execute_order": 10,
+    "active": true
+}
