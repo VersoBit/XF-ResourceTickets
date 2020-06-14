@@ -1,10 +1,10 @@
 {
-    "edit_format": "textbox",
-    "edit_format_params": "",
+    "edit_format": "callback",
+    "edit_format_params": "VersoBit\\ResourceTickets\\Option\\TicketsCategoryId::renderOption",
     "data_type": "unsigned_integer",
     "sub_options": [],
-    "validation_class": "",
-    "validation_method": "",
+    "validation_class": "VersoBit\\ResourceTickets\\Option\\TicketsCategoryId",
+    "validation_method": "verifyOption",
     "default_value": "1",
     "relations": {
         "versobitResourceTickets": 1

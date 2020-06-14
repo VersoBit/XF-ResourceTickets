@@ -47,6 +47,12 @@
         "version_string": "1.0.0a1",
         "hash": "d41d8cd98f00b204e9800998ecf8427e"
     },
+    "vb_resourcetickets_ticket_category_not_found.txt": {
+        "global_cache": true,
+        "version_id": 10000015,
+        "version_string": "1.0.0a5",
+        "hash": "dc2a05186c0a36d26aa77223371d6a3a"
+    },
     "vb_resourcetickets_view_resource_ticket.txt": {
         "global_cache": true,
         "version_id": 10000013,
