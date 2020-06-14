@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <class_extensions>
-  <extension from_class="NF\Tickets\Repository\Category" to_class="VersoBit\ResourceTickets\NF\Tickets\Repository\Category" execute_order="10" active="1"/>
   <extension from_class="NF\Tickets\Service\Ticket\Deleter" to_class="VersoBit\ResourceTickets\NF\Tickets\Service\Ticket\Deleter" execute_order="10" active="1"/>
   <extension from_class="XFRM\Service\ResourceItem\Approve" to_class="VersoBit\ResourceTickets\XFRM\Service\ResourceItem\Approve" execute_order="10" active="1"/>
   <extension from_class="XFRM\Service\ResourceItem\Create" to_class="VersoBit\ResourceTickets\XFRM\Service\ResourceItem\Create" execute_order="10" active="1"/>
-  <extension from_class="XFRM\Service\ResourceItem\Edit" to_class="VersoBit\ResourceTickets\XFRM\Service\ResourceItem\Edit" execute_order="10" active="1"/>
   <extension from_class="XFRM\Service\ResourceItem\Reassign" to_class="VersoBit\ResourceTickets\XFRM\Service\ResourceItem\Reassign" execute_order="10" active="1"/>
   <extension from_class="XFRM\Service\ResourceUpdate\Approve" to_class="VersoBit\ResourceTickets\XFRM\Service\ResourceUpdate\Approve" execute_order="10" active="1"/>
   <extension from_class="XFRM\Service\ResourceUpdate\Create" to_class="VersoBit\ResourceTickets\XFRM\Service\ResourceUpdate\Create" execute_order="20" active="1"/>
