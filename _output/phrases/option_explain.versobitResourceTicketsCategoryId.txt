@@ -1,1 +1,1 @@
-The ID of the tickets category to post new resource tickets to.
+The tickets category to post new tickets to on resource/resource update submission.

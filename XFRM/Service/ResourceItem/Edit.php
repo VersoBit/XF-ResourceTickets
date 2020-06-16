@@ -4,7 +4,7 @@ namespace VersoBit\ResourceTickets\XFRM\Service\ResourceItem;
 
 class Edit extends XFCP_Edit
 {
-    public function _save()
+    protected function _save()
     {
         $resource = parent::_save();
 

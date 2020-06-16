@@ -1,1 +1,1 @@
-The ID of the prefix to be set to all resources/resource updates awaiting approval.
+The prefix to be set to tickets associated with resources/resource updates awaiting approval.
