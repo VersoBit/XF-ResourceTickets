@@ -28,8 +28,8 @@ class Create extends XFCP_Create
             $ticketCreateService = $this->app->service('NF\Tickets:Ticket\Creator', $ticketCategory);
             $ticketCreateService->setContent($resource->title, "[B]".$resource->title."[/B] submitted.", false);
             $ticketCreateService->setPrefix(\XF::options()->versobitResourceTicketsAwaitingApprovalPrefixId);
-            $ticketCreateService->save();
             $ticketCreateService->sendNotifications();
+            $ticketCreateService->save();
 
             // Set resource's ticket ID
             // TODO: work out way of moving this out of 'asVisitor' by passing $ticketCreateService
