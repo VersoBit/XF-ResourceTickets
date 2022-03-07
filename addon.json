@@ -2,14 +2,25 @@
     "legacy_addon_id": "",
     "title": "[VersoBit] Resource Tickets",
     "description": "Automatically creates & replies to tickets based on resource actions.",
-    "version_id": 10000017,
-    "version_string": "1.0.0a7",
+    "version_id": 10000018,
+    "version_string": "1.0.0a8",
     "dev": "VersoBit",
-    "dev_url": "https://versobit.dev/",
+    "dev_url": "https://github.com/VersoBit",
     "faq_url": "",
-    "support_url": "https://support.versobit.dev/",
-    "extra_urls": [],
+    "support_url": "",
+    "extra_urls": {
+        "GitHub Repo": "https://github.com/VersoBit/XF-ResourceTickets",
+        "Report An Issue": "https://github.com/VersoBit/XF-ResourceTickets/issues"
+    },
     "require": {
+        "XF": [
+            2020801,
+            "XenForo 2.2.8p1+"
+        ],
+        "php": [
+            "8.1.0",
+            "PHP 8.1.0+"
+        ],
         "XFRM": [
             2010670,
             "XFRM 2.1.6+"

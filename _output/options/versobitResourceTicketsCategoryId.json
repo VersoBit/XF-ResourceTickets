@@ -5,6 +5,7 @@
     "sub_options": [],
     "validation_class": "VersoBit\\ResourceTickets\\Option\\TicketsCategoryId",
     "validation_method": "verifyOption",
+    "advanced": false,
     "default_value": "1",
     "relations": {
         "versobitResourceTickets": 1

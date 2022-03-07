@@ -1,5 +1,6 @@
 {
     "icon": "fa-ticket",
     "display_order": 1,
+    "advanced": false,
     "debug_only": false
 }

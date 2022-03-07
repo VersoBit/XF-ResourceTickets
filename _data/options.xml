@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <options>
-  <option option_id="versobitResourceTicketsAcceptedPrefixId" edit_format="callback" data_type="unsigned_integer" validation_class="VersoBit\ResourceTickets\Option\TicketsAcceptedPrefixId" validation_method="verifyOption">
+  <option option_id="versobitResourceTicketsAcceptedPrefixId" edit_format="callback" data_type="unsigned_integer" validation_class="VersoBit\ResourceTickets\Option\TicketsAcceptedPrefixId" validation_method="verifyOption" advanced="0">
     <default_value>0</default_value>
     <edit_format_params>VersoBit\ResourceTickets\Option\TicketsAcceptedPrefixId::renderOption</edit_format_params>
     <relation group_id="versobitResourceTickets" display_order="4"/>
   </option>
-  <option option_id="versobitResourceTicketsAwaitingApprovalPrefixId" edit_format="callback" data_type="unsigned_integer" validation_class="VersoBit\ResourceTickets\Option\TicketsAwaitingApprovalPrefixId" validation_method="verifyOption">
+  <option option_id="versobitResourceTicketsAwaitingApprovalPrefixId" edit_format="callback" data_type="unsigned_integer" validation_class="VersoBit\ResourceTickets\Option\TicketsAwaitingApprovalPrefixId" validation_method="verifyOption" advanced="0">
     <default_value>0</default_value>
     <edit_format_params>VersoBit\ResourceTickets\Option\TicketsAwaitingApprovalPrefixId::renderOption</edit_format_params>
     <relation group_id="versobitResourceTickets" display_order="3"/>
   </option>
-  <option option_id="versobitResourceTicketsCategoryId" edit_format="callback" data_type="unsigned_integer" validation_class="VersoBit\ResourceTickets\Option\TicketsCategoryId" validation_method="verifyOption">
+  <option option_id="versobitResourceTicketsCategoryId" edit_format="callback" data_type="unsigned_integer" validation_class="VersoBit\ResourceTickets\Option\TicketsCategoryId" validation_method="verifyOption" advanced="0">
     <default_value>1</default_value>
     <edit_format_params>VersoBit\ResourceTickets\Option\TicketsCategoryId::renderOption</edit_format_params>
     <relation group_id="versobitResourceTickets" display_order="1"/>
